@@ -118,6 +118,22 @@ h1 {
   white-space: nowrap;
 }
 
+.links dt.links-group {
+  grid-column: 1 / -1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.links dt.links-group:first-of-type {
+  margin-top: 0;
+}
+
+.links dt.links-group + dd {
+  display: none;
+}
+
 .links dd {
   font-size: 0.8rem;
 }
@@ -225,16 +241,20 @@ h1 {
   <div class="links">
     <h2>Links</h2>
     <dl>
-      <dt>X (Miriel)</dt>
+      <dt class="links-group">Miriel</dt><dd></dd>
+      <dt>X</dt>
       <dd><a href="https://x.com/miriel_app">x.com/miriel_app</a></dd>
-      <dt>X (Arkenstone)</dt>
-      <dd><a href="https://x.com/Arkenstone_Labs">x.com/Arkenstone_Labs</a></dd>
       <dt>Discord</dt>
       <dd><a href="https://discord.gg/PnHNNtJNjn">discord.gg/PnHNNtJNjn</a></dd>
       <dt>Telegram</dt>
       <dd><a href="https://t.me/miriel_communtiy">t.me/miriel_communtiy</a></dd>
       <dt>Apply (Tester)</dt>
       <dd><a href="https://forms.gle/jVycpupWswE8sUhW8">forms.gle/jVycpupWswE8sUhW8</a></dd>
+      <dt class="links-group">Arkenstone Labs</dt><dd></dd>
+      <dt>Website</dt>
+      <dd><a href="https://www.arkenstone-labs.com/">arkenstone-labs.com</a></dd>
+      <dt>X</dt>
+      <dd><a href="https://x.com/Arkenstone_Labs">x.com/Arkenstone_Labs</a></dd>
     </dl>
   </div>
 
